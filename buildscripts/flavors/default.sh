@@ -36,7 +36,6 @@ cpuflags=
 	--disable-vulkan \
 	--disable-iconv \
 	--disable-stripping \
-	--pkg-config-flags=--static \
 	\
 	--disable-muxers \
 	--disable-decoders \
@@ -54,8 +53,8 @@ cpuflags=
 	--disable-swscale-alpha \
 	\
 	--enable-jni \
-	--enable-bsfs \
-	--enable-mediacodec \
+	--disable-bsfs \
+	--disable-mediacodec \
 	\
 	--disable-dxva2 \
 	--disable-vaapi \
@@ -72,8 +71,6 @@ cpuflags=
 	\
 	--enable-mbedtls \
 	\
-	--enable-libdav1d \
-	\
 	--enable-libxml2 \
 	\
 	--enable-avutil \
@@ -82,27 +79,6 @@ cpuflags=
 	--enable-avformat \
 	--enable-swscale \
 	--enable-swresample \
-	\
-	--enable-decoder=flv \
-	--enable-decoder=h263 \
-	--enable-decoder=h263i \
-	--enable-decoder=h263p \
-	--enable-decoder=h264* \
-	--enable-decoder=mpeg1video \
-	--enable-decoder=mpeg2* \
-	--enable-decoder=mpeg4* \
-	--enable-decoder=vp6 \
-	--enable-decoder=vp6a \
-	--enable-decoder=vp6f \
-	--enable-decoder=vp8* \
-	--enable-decoder=vp9* \
-	--enable-decoder=hevc* \
-	--enable-decoder=av1* \
-	--enable-decoder=libdav1d \
-	--enable-decoder=theora \
-	--enable-decoder=msmpeg* \
-	--enable-decoder=mjpeg* \
-	--enable-decoder=wmv* \
 	\
 	--enable-decoder=aac* \
 	--enable-decoder=ac3 \
@@ -128,21 +104,7 @@ cpuflags=
 	--enable-decoder=wma* \
 	--enable-decoder=pcm* \
 	--enable-decoder=dsd* \
-	--enable-decoder=dca \
-	\
-	--enable-decoder=ssa \
-	--enable-decoder=ass \
-	--enable-decoder=dvbsub \
-	--enable-decoder=dvdsub \
-	--enable-decoder=srt \
-	--enable-decoder=stl \
-	--enable-decoder=subrip \
-	--enable-decoder=subviewer \
-	--enable-decoder=subviewer1 \
-	--enable-decoder=text \
-	--enable-decoder=vplayer \
-	--enable-decoder=webvtt \
-	--enable-decoder=movtext \
+ 	--enable-decoder=dca \
 	\
 	--enable-decoder=mjpeg \
 	--enable-decoder=ljpeg \
@@ -154,28 +116,6 @@ cpuflags=
 	--enable-decoder=tiff \
 	--enable-decoder=webp \
 	--enable-decoder=jpegls \
-	\
-	--enable-demuxer=concat \
-	--enable-demuxer=data \
-	--enable-demuxer=flv \
-	--enable-demuxer=hls \
-	--enable-demuxer=latm \
-	--enable-demuxer=live_flv \
-	--enable-demuxer=loas \
-	--enable-demuxer=m4v \
-	--enable-demuxer=mov \
-	--enable-demuxer=mpegps \
-	--enable-demuxer=mpegts \
-	--enable-demuxer=mpegvideo \
-	--enable-demuxer=hevc \
-	--enable-demuxer=rtsp \
-	--enable-demuxer=mpeg4 \
-	--enable-demuxer=mjpeg* \
-	--enable-demuxer=avi \
-	--enable-demuxer=av1 \
-	--enable-demuxer=matroska \
-	--enable-demuxer=dash \
-	--enable-demuxer=webm_dash_manifest \
 	\
 	--enable-demuxer=aac \
 	--enable-demuxer=ac3 \
@@ -201,24 +141,10 @@ cpuflags=
 	--enable-demuxer=wv \
 	--enable-demuxer=xwma \
 	--enable-demuxer=dsf \
+	--enable-demuxer=dts \
 	--enable-demuxer=truehd \
 	--enable-demuxer=dts \
 	--enable-demuxer=dtshd \
-	\
-	--enable-demuxer=ass \
-	--enable-demuxer=srt \
-	--enable-demuxer=stl \
-	--enable-demuxer=webvtt \
-	--enable-demuxer=subviewer \
-	--enable-demuxer=subviewer1 \
-	--enable-demuxer=vplayer \
-	\
-	--enable-parser=h263 \
-	--enable-parser=h264 \
-	--enable-parser=hevc \
-	--enable-parser=mpeg4 \
-	--enable-parser=mpeg4video \
-	--enable-parser=mpegvideo \
 	\
 	--enable-parser=aac* \
 	--enable-parser=ac3 \
@@ -229,7 +155,7 @@ cpuflags=
 	--enable-parser=mpegaudio \
 	--enable-parser=tak \
 	--enable-parser=vorbis \
- 	--enable-parser=dca \
+	--enable-parser=dca \
 	\
 	--enable-filter=overlay \
 	--enable-filter=equalizer \
@@ -255,7 +181,6 @@ cpuflags=
 	--enable-protocol=tcp \
 	--enable-protocol=tls \
 	--enable-protocol=srt \
-	--enable-protocol=udp \
 	\
 	--enable-encoder=mjpeg \
 	--enable-encoder=ljpeg \
