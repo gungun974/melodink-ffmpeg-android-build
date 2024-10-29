@@ -145,6 +145,9 @@ cpuflags=
 	--enable-demuxer=truehd \
 	--enable-demuxer=dts \
 	--enable-demuxer=dtshd \
+	--enable-demuxer=hls \
+	--enable-demuxer=dash \
+	--enable-demuxer=webm_dash_manifest \
 	\
 	--enable-parser=aac* \
 	--enable-parser=ac3 \
