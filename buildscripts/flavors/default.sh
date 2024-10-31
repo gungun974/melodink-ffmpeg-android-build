@@ -116,6 +116,7 @@ cpuflags=
 	--enable-decoder=tiff \
 	--enable-decoder=webp \
 	--enable-decoder=jpegls \
+	--enable-decoder=ass \
 	\
 	--enable-demuxer=aac \
 	--enable-demuxer=ac3 \
@@ -148,6 +149,7 @@ cpuflags=
 	--enable-demuxer=hls \
 	--enable-demuxer=dash \
 	--enable-demuxer=webm_dash_manifest \
+	--enable-demuxer=ass \
 	\
 	--enable-parser=aac* \
 	--enable-parser=ac3 \
