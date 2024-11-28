@@ -1,4 +1,4 @@
-name: Build libmpv-android
+name: Build ffmpeg-android
 
 on:
   push:

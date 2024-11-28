@@ -1,4 +1,4 @@
-include(":libmpv")
+include(":ffmpeg")
 
 pluginManagement {
     repositories {

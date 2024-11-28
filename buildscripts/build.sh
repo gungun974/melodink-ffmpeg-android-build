@@ -5,7 +5,7 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 cleanbuild=0
 nodeps=0
-target=mpv
+target=ffmpeg
 archs=(armv7l arm64 x86 x86_64)
 
 getdeps () {
@@ -44,7 +44,7 @@ loadarch () {
 		exit 1
 	fi
 	export prefix_dir="$PWD/prefix/$prefix_name"
-	export native_dir="$PWD/../libmpv/src/main/jniLibs/$prefix_name"
+	export native_dir="$PWD/../ffmpeg/src/main/jniLibs/$prefix_name"
 	export CC=$cc_triple-clang
 	if [[ "$1" == arm* ]]; then
 		export AS="$CC"
