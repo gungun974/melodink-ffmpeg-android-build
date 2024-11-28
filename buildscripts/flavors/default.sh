@@ -31,8 +31,8 @@ cpuflags=
 	--disable-gpl \
 	--disable-nonfree \
 	--enable-version3 \
-	--enable-static \
-	--disable-shared \
+	--disable-static \
+	--enable-shared \
 	--disable-vulkan \
 	--disable-iconv \
 	--disable-stripping \
